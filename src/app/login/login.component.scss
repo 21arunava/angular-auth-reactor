@@ -1,0 +1,19 @@
+.login-form{
+    //background-color: $fancy-primary-color;
+    background-color: #e0e6b0;
+    margin-top: 10%;
+    padding: 20px;
+    border-radius: 10px;
+    border: 10px solid #424941;
+    .form-control{
+        margin-bottom: 10px;
+        &.has-error{
+            border-color: #872926;
+    outline: none;
+    box-shadow: 0 0 0 0.2rem rgba(249, 11, 5, 0.47);
+        }
+    }
+    button{
+        width: 100%;
+    }
+}

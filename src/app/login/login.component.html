@@ -1,0 +1,9 @@
+<div class="row">
+    <div class="col-md-6 offset-md-3 login-form">
+        <form name="login" (ngSubmit)="loginform.form.valid && login()" #loginform="ngForm">
+            <input class="form-control" [ngClass]="{ 'has-error': loginemail.invalid && loginemail.touched}" #loginemail="ngModel" type="email" placeholder="Email" name="email" [(ngModel)]="user.email" required>
+            <input class="form-control" [ngClass]="{ 'has-error': loginpassword.invalid && loginpassword.touched}" #loginpassword="ngModel" type="password" placeholder="Password" name="password" [(ngModel)]="user.password" required>
+            <button class="btn btn-success" [disabled]="!loginform.form.valid">Login</button>
+        </form>
+    </div>
+</div>
