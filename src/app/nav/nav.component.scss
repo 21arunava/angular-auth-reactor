@@ -1,0 +1,19 @@
+
+.bg-dark {
+    //background-color: $fancy_nav_color !important;
+    background-color: #424941 !important;
+    
+}
+
+.navbar-dark {
+    .navbar-nav {
+        .nav-link{
+            color : white;
+            &:hover{
+                //color: $fancy_success_color ;
+                color: #66A82E;
+            }
+        }
+        
+    }
+}       
